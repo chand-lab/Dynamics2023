@@ -115,82 +115,121 @@ D= PMDdecoding(regressions)
 The following commands will plot all parts of Figure 6: 
 
 6A
-> D.plotRTLFADS() 
 
+```
+D.plotRTLFADS() 
+```
 6B
-> D.plotChoiceLFADS()
-
+```
+D.plotChoiceLFADS()
+```
 6C & E
-> D.plotR2() 
-
+```
+D.plotR2() 
+```
 6D & F
-> D.plotAcc()
-
+```
+D.plotAcc()
+```
 
 ## Figure 7: Initial conditions and inputs contribute to choice-related dynamics 
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData.
 
 Running the following code will initialize the data to recreate all of the plots in Figure 7:
-> N30 = PMddynamics(M); 
-> N30.calcWinCoh(M);
 
-> Nnon = PMddynamics(M,'useNonOverlapping',1);
-> Nnon.calcWinCoh(M);
+```
+N30 = PMddynamics(M); 
+N30.calcWinCoh(M);
+```
+
+```
+Nnon = PMddynamics(M,'useNonOverlapping',1);
+Nnon.calcWinCoh(M);
+```
 
 The following commands will plot all parts of Figure 7: 
 
 7C
-> dataTable.trajectories1 = N30.plotTrajectories('showPooled',0,'whichCoh',1, 'showGrid',0, 'hideAxes',1);
->
-> dataTable.trajectories2 = N30.plotTrajectories('showPooled',0,'whichCoh',4, 'showGrid',0, 'hideAxes',1);
-> 
-> dataTable.trajectories3 = N30.plotTrajectories('showPooled',0,'whichCoh',7,'showGrid',0, 'hideAxes',1);
+
+```
+dataTable.trajectories1 = N30.plotTrajectories('showPooled',0,'whichCoh',1, 'showGrid',0, 'hideAxes',1);
+dataTable.trajectories2 = N30.plotTrajectories('showPooled',0,'whichCoh',4, 'showGrid',0, 'hideAxes',1);
+dataTable.trajectories3 = N30.plotTrajectories('showPooled',0,'whichCoh',7,'showGrid',0, 'hideAxes',1);
+``` 
 
 7 D-G
-> [~, ~, ~, ~, ~, inputsAndIC] = N30.calcInputsAndIC;
+
+```
+[~, ~, ~, ~, ~, inputsAndIC] = N30.calcInputsAndIC;
+```
 
 7 H-K
-> [~, ~, ~, ~, ~, nonOverlapping] = Nnon.calcInputsAndIC;
 
+```
+[~, ~, ~, ~, ~, nonOverlapping] = Nnon.calcInputsAndIC;
+```
 
 ## Figure 8: Outcome changes initial conditions
 
 Open 'plotFigure8.m'. Load Figure8Data.mat from DryadData.
 
 Running the following command in POA.m will initialize the data to recreate all of the plots in Figure 8: 
->[r] = POA_plotting(outcome) 
+
+```
+[r] = POA_plotting(outcome) 
+```
 
 8A
-> r.plotComponents()
+
+```
+r.plotComponents()
+```
 
 8B
-> r.plotTrajectories()
+```
+r.plotTrajectories()
+```
 
 8C & E
-> r.plotKinet()
+
+```
+r.plotKinet()
+```
 
 8D
-> r.plotDecoder()
+
+```
+r.plotDecoder()
+```
 
 ## Figure S3
+
 Open 'plotFigureS3.m'.
 
 Running the following code will initialize the data to recreate all of the plots in Figure S3:
+
+```
 kernel = 0.02;
 [ucFR, ucFRc, ucRT, tNew, nNeuronsOut]=simulatePMdneurons('UnbiasedChoice',kernel,nNeurons,nTrials);
 [bcFR, bcFRc, bcRT, tNew, nNeuronsOut]=simulatePMdneurons('BiasedChoice',kernel,nNeurons,nTrials);
 [rtFR, rtFRc, rtRT, tNew, nNeuronsOut]=simulatePMdneurons('RT',kernel,nNeurons,nTrials);
+```
 
 3A
-> plotPCA(ucFRc, ucRT, tNew, nNeuronsOut);
-> plotRegressionToRT(ucFR, ucRT, nTrials);
-> plotChoiceDecoding(ucFR, ucRT, nTrials);
+
+```
+plotPCA(ucFRc, ucRT, tNew, nNeuronsOut);
+plotRegressionToRT(ucFR, ucRT, nTrials);
+plotChoiceDecoding(ucFR, ucRT, nTrials);
+```
 
 3B
-> plotPCA(bcFRc, bcRT, tNew, nNeuronsOut);
-> plotRegressionToRT(bcFR, bcRT, nTrials);
-> plotChoiceDecoding(bcFR, bcRT, nTrials);
 
+```
+plotPCA(bcFRc, bcRT, tNew, nNeuronsOut);
+plotRegressionToRT(bcFR, bcRT, nTrials);
+plotChoiceDecoding(bcFR, bcRT, nTrials);
+```
 3C
 > plotPCA(rtFRc, rtRT, tNew, nNeuronsOut);
 > plotRegressionToRT(rtFR, rtRT, nTrials);
