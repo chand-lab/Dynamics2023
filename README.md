@@ -47,7 +47,7 @@ The number corresponds to the order of presentation in the figure. You can plot 
 
 ## Figure 4: Initial conditions predict subsequent dynamics and RT
 
-Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
+Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. This should give you a structure M with fields coherence and RT that are themselves structs with various fields including firing rates smoothed with appropriate filter and trial averaged.
 
 Running the following code will initialize the data to recreate all of the plots in Figure 4:
 
