@@ -5,7 +5,7 @@ MATLAB and Python code used to construct the figures found in:
 > _Boucher PO, Wang T, Carceroni L, Kane G, Shenoy KV, Chandramouli C_
 > __Initial conditions combine with sensory evidence to induce decision-related dynamics in premotor cortex__
 
-Experimental data ([doi:10.5061/dryad.9cnp5hqn0](doi:10.5061/dryad.9cnp5hqn0)) and scripts ([https://github.com/chand-lab/Dynamics2023](https://github.com/chand-lab/Dynamics2023)) are organized based on the order of figures in the manuscript (tested in Matlab R2021b).
+Experimental data ([https://doi:10.5061/dryad.9cnp5hqn0](doi:10.5061/dryad.9cnp5hqn0)) and scripts ([https://github.com/chand-lab/Dynamics2023](https://github.com/chand-lab/Dynamics2023)) are organized based on the order of figures in the manuscript (tested in Matlab R2021b).
 
 Download Github repository:        `git clone https://github.com/chand-lab/Dynamics2023.git`
 
