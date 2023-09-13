@@ -47,9 +47,11 @@ The number corresponds to the order of presentation in the figure. You can plot 
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure 4:
+
+```
 > N30 = PMddynamics(M); 
 > N30.calcWinCoh(M);
-
+```
 
 The following commands will plot all parts of Figure 4: 
 
