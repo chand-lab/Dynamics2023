@@ -38,7 +38,10 @@ Open 'plotFigure2.m'. Run this script to load behavioral data for both monkeys. 
 ### Figure 3: Heterogeneous and time-varying activity of PMd neurons 
  
 Open 'plotFigure3.m'. If you want to display the first unit presented in Figure 3 run the following command:
- >Fig3Neurons(1)
+
+```
+ Fig3Neurons(1)
+```
 
 The number corresponds to the order of presentation in the figure. You can plot all 6 units in this manner (e.g., Fig3Neurons(2) will plot the second and so on). Plotted units are shown organized by coherence and RT, as well as aligned to cue and movement onset. Scaling may be slightly different between the figures in the paper and what is plotted from MATLAB.
 
@@ -49,20 +52,27 @@ Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData.
 Running the following code will initialize the data to recreate all of the plots in Figure 4:
 
 ```
-> N30 = PMddynamics(M); 
-> N30.calcWinCoh(M);
+N30 = PMddynamics(M); 
+N30.calcWinCoh(M);
 ```
 
 The following commands will plot all parts of Figure 4: 
 
 4A & H
-> N30.plotComponents;
+```
+N30.plotComponents;
+```
 
 4B
-> N30.plotTrajectories('showPooled',1,'showGrid',0,'hideAxes',1); 
+```
+N30.plotTrajectories('showPooled',1,'showGrid',0,'hideAxes',1); 
+```
 
 4C-G
-> N30.plotKinet
+
+```
+N30.plotKinet
+```
 
 - A sister plot to the average raw speed plot is included (bottom right). This plot shows change in firing rate (Euclidean distance between adjacent time points) averaged across trials and within RT bins.  Esentially, firing rates associated with faster RT bins move through state space faster than firing rates in slower RT bins.
 
@@ -71,23 +81,36 @@ The following commands will plot all parts of Figure 4:
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure 5:
-> Nnon = PMddynamics(M,'useNonOverlapping',1);
+
+```
+Nnon = PMddynamics(M,'useNonOverlapping',1);
+```
 
 The following commands will plot all parts of Figure 5: 
 
 5A
-> Nnon.plotTrajectories('showPooled',1,'showGrid',0, 'hideAxes',1);
+
+```
+Nnon.plotTrajectories('showPooled',1,'showGrid',0, 'hideAxes',1);
+```
 
 5B-E
-> Nnon.plotKinet;
+
+```
+Nnon.plotKinet;
+```
 
 
 
 ## Figure 6: Single-trial analysis and decoding
+
 Open 'plotFigure6.m'. Load regressions.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure 6. 
-> D= PMDdecoding(regressions) 
+
+```
+D= PMDdecoding(regressions) 
+```
 
 The following commands will plot all parts of Figure 6: 
 
