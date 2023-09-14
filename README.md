@@ -230,22 +230,33 @@ plotRegressionToRT(bcFR, bcRT, nTrials);
 plotChoiceDecoding(bcFR, bcRT, nTrials);
 ```
 3C
-> plotPCA(rtFRc, rtRT, tNew, nNeuronsOut);
-> plotRegressionToRT(rtFR, rtRT, nTrials);
-> plotChoiceDecoding(rtFR, rtRT, nTrials);
+
+```
+plotPCA(rtFRc, rtRT, tNew, nNeuronsOut);
+plotRegressionToRT(rtFR, rtRT, nTrials);
+plotChoiceDecoding(rtFR, rtRT, nTrials);
+```
 
 ## Figure S4
 
 Open 'plotFigure3.m'. If you want to display the 1st unit with 30 ms (S4 A) or 15 ms Gaussian (S4 B) or 50 ms boxcar (S4 C) smoothing presented in Figure S4 run the following commands:
 
 S4A
-> Fig3Neurons(1);
+
+```
+Fig3Neurons(1);
+```
+
 
 S4B
-> Fig3Neurons(1, smoothing='gauss15');
+```
+Fig3Neurons(1, smoothing='gauss15');
+```
 
 S4C
-> Fig3Neurons(1, smoothing='box50');
+```
+Fig3Neurons(1, smoothing='box50');
+```
 
 The number corresponds to the order of presentation in the figure and you can plot all 8 units in this manner
 
@@ -253,112 +264,166 @@ The number corresponds to the order of presentation in the figure and you can pl
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure S5:
-> N30 = PMddynamics(M);
 
-> load 15msGaussFRs.mat
-> N15 = PMddynamics(M);
+```
+N30 = PMddynamics(M);
 
-> load 50msBoxcarFRs.mat
-> N50 = PMddynamics(M);
+load 15msGaussFRs.mat
+N15 = PMddynamics(M);
+
+load 50msBoxcarFRs.mat
+N50 = PMddynamics(M);
+```
 
 
 S5A
+```
 dataTable.varExplained = N30.plotVariance('n',10);
+```
 
 S5B
+```
 dataTable.var15ms = N15.plotVariance('n',10);
+```
 
 S5C
+
+```
 dataTable.var50ms = N50.plotVariance('n',10);
+```
 
 ## Figure S6
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure S6:
-> N30 = PMddynamics(M);
+
+```
+N30 = PMddynamics(M);
+```
 
 S6A & B
-> dataTable.trialCounts = N30.plotTrialCounts;
+
+```
+dataTable.trialCounts = N30.plotTrialCounts;
+```
 
 ## Figure S7
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure S7:
-> N30 = PMddynamics(M);
+
+```
+N30 = PMddynamics(M);
+```
 
 S7
-> N30.plotTrajectories('showPooled',1,'showGrid',1,'hideAxes',0);
-> axis equal
+
+```
+N30.plotTrajectories('showPooled',1,'showGrid',1,'hideAxes',0);
+axis equal
+```
 
 ## Figure S9
 Open 'plotFigure8.m'. Load Figure8data.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure S9:
-> dataS9= outcome.pcaCohRT;
-> [pcDataS9]=calculatePCs_S9(dataS9);
+
+```
+dataS9= outcome.pcaCohRT;
+[pcDataS9]=calculatePCs_S9(dataS9);
+```
 
 S9A
+```
 plotComponents_S9(pcDataS9)
+```
 
 S9B
+```
 plotTrajectories_S9(pcDataS9)
+```
 
 
 ## Figure S10
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure S10:
-> NSU = PMddynamics(M,'useSingleNeurons',1);
+
+```
+NSU = PMddynamics(M,'useSingleNeurons',1);
+```
 
 S10A
-> dataTable.SUtrajectories = NSU.plotTrajectories;
+```
+dataTable.SUtrajectories = NSU.plotTrajectories;
+```
 
 S10B-E
-> dataTable.SUKinet = NSU.plotKinet;
+```
+dataTable.SUKinet = NSU.plotKinet;
+```
 
 
 ## Figure S11
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
 Running the following code will initialize the data to recreate all of the plots in Figure S11:
-> N30 = PMddynamics(M);
+```
+N30 = PMddynamics(M);
 
-> load 15msGaussFRs.mat
-> N15 = PMddynamics(M);
+load 15msGaussFRs.mat
+N15 = PMddynamics(M);
 
-> load 50msBoxcarFRs.mat
-> N50 = PMddynamics(M);
+load 50msBoxcarFRs.mat
+N50 = PMddynamics(M);
+```
 
 S11A
-> dataTable.trajectories = N30.plotTrajectories('showPooled',1,'showGrid',0,'hideAxes',1);
-> dataTable.traj15ms = N15.plotTrajectories;
-> dataTable.traj50ms = N50.plotTrajectories;
+
+```
+dataTable.trajectories = N30.plotTrajectories('showPooled',1,'showGrid',0,'hideAxes',1);
+dataTable.traj15ms = N15.plotTrajectories;
+dataTable.traj50ms = N50.plotTrajectories;
+```
 
 
 S11B-E
-> dataTable.kinet = N30.plotKinet;
-> dataTable.kinet15ms = N15.plotKinet;
-> dataTable.kinet50ms = N50.plotKinet;
+```
+dataTable.kinet = N30.plotKinet;
+dataTable.kinet15ms = N15.plotKinet;
+dataTable.kinet50ms = N50.plotKinet;
+```
 
 ## Figure S12
 Open 'plotFigureS12.m'.  
 
 Run:
-> whichCV='hard';
-> [modelToUse,choiceV,RTs,trainError,testError,st,st1,tAxis,whichT]=populationTCA(whichCV);
 
-> whichCV='soft';
-> [~,~,~,trainError_soft,testError_soft,st_soft,st1_soft]=populationTCA(whichCV);
+```
+whichCV='hard';
+[modelToUse,choiceV,RTs,trainError,testError,st,st1,tAxis,whichT]=populationTCA(whichCV);
+
+whichCV='soft';
+[~,~,~,trainError_soft,testError_soft,st_soft,st1_soft]=populationTCA(whichCV);
+```
 
 S12B
-> plotTCAmodel(modelToUse,tAxis,whichT)
+
+```
+plotTCAmodel(modelToUse,tAxis,whichT)
+```
 
 S12C
-> plotTCAsessionDynamics(modelToUse,choiceV,RTs,tAxis,whichT)
+```
+plotTCAsessionDynamics(modelToUse,choiceV,RTs,tAxis,whichT)
+```
 
 S12D & E
-> plotTCAvar(testError_soft,trainError_soft,st_soft,st1_soft)
-> plotTCAvar(testError,trainError,st,st1)
+
+```
+plotTCAvar(testError_soft,trainError_soft,st_soft,st1_soft)
+plotTCAvar(testError,trainError,st,st1)
+```
 
 
 
