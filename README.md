@@ -26,9 +26,11 @@ Size of data files (>1 MB):
 - TCAdata (folder) - 10.7 GB
 - 14October2013_Tiberius.mat - 1.2 GB
 
+### Details
 
 - [Data Description](#Description-of-the-data-and-file-structure)
 - [Figure 2](#figure-2)
+- [Figure 3](#figure-3)
 
 ## Description of the data and file structure
 
@@ -38,7 +40,8 @@ To make replotting the figures as easy as possible a script entitled 'plotAllFig
 #### Psychometric curves for the monkey, and RT and box plots
 Open 'plotFigure2.m'. Run this script to load behavioral data for both monkeys. Script then displays psychometric curves (percent responded red as a function of signed coherence), reaction time (RT) curves as a function of signed coherence, and boxplots of RTs organized by stimulus coherence for both monkeys.
 
-### Figure 3: Heterogeneous and time-varying activity of PMd neurons 
+### Figure 3
+#### Heterogeneous and time-varying activity of PMd neurons 
  
 Open 'plotFigure3.m'. If you want to display the first unit presented in Figure 3 run the following command:
 
