@@ -26,6 +26,10 @@ Size of data files (>1 MB):
 - TCAdata (folder) - 10.7 GB
 - 14October2013_Tiberius.mat - 1.2 GB
 
+
+- [Data Description](#Description-of-the-data-and-file-structure)
+- [Figure 2](#Figure-2:-Psychometric-curves-for-the-monkey,-and-RT-and-box-plots)
+
 ## Description of the data and file structure
 
 To make replotting the figures as easy as possible a script entitled 'plotAllFigures.m' can be used as a guide to open scripts to plot specific figures (e.g., 'plotFigure2.m'). All figures, except schematic figures (Figures 1, & 2a-c,g; Supplementary Figures 1, 8, 12a, 15a, & 20a) and Supplementary Figure 2, can be plotted in this manner. Data for replotting Supplmentary Figure 2 is available upon request (Dr. Chandramouli Chandrasekaran: cchandr1@bu.edu).
