@@ -28,14 +28,14 @@ Size of data files (>1 MB):
 
 
 - [Data Description](#Description-of-the-data-and-file-structure)
-- [Figure 2](#Figure-2:-Psychometric-curves-for-the-monkey,-and-RT-and-box-plots)
+- [Figure 2](#figure-2)
 
 ## Description of the data and file structure
 
 To make replotting the figures as easy as possible a script entitled 'plotAllFigures.m' can be used as a guide to open scripts to plot specific figures (e.g., 'plotFigure2.m'). All figures, except schematic figures (Figures 1, & 2a-c,g; Supplementary Figures 1, 8, 12a, 15a, & 20a) and Supplementary Figure 2, can be plotted in this manner. Data for replotting Supplmentary Figure 2 is available upon request (Dr. Chandramouli Chandrasekaran: cchandr1@bu.edu).
 
-### Figure 2: Psychometric curves for the monkey, and RT and box plots
-
+### Figure 2
+#### Psychometric curves for the monkey, and RT and box plots
 Open 'plotFigure2.m'. Run this script to load behavioral data for both monkeys. Script then displays psychometric curves (percent responded red as a function of signed coherence), reaction time (RT) curves as a function of signed coherence, and boxplots of RTs organized by stimulus coherence for both monkeys.
 
 ### Figure 3: Heterogeneous and time-varying activity of PMd neurons 
