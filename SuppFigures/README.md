@@ -1,5 +1,7 @@
 # Readme for Generating Supplementary Figures
 
+## Figure List
+
 * [Figure S3](#figure-s3)
 * [Figure S4](#figure-s4)
 * [Figure S5](#figure-s5)
@@ -55,6 +57,8 @@ plotPCA(rtFRc, rtRT, tNew, nNeuronsOut);
 plotRegressionToRT(rtFR, rtRT, nTrials);
 plotChoiceDecoding(rtFR, rtRT, nTrials);
 ```
+
+[Figure List](#figure-list)
 
 ## Figure S4
 
