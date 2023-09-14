@@ -1,5 +1,20 @@
 # Readme for Generating Supplementary Figures
 
+* [Figure S3](#figure-s3)
+* [Figure S4](#figure-s4)
+* [Figure S5](#figure-s5)
+* [Figure S6](#figure-s6)
+* [Figure S7](#figure-s7)
+* [Figure S8](#figure-s8)
+* [Figure S9](#figure-s9)
+* [Figure S10](#figure-s10)
+* [Figure S11](#figure-s11)
+* [Figure S12](#figure-s12)
+* [Figure S13](#figure-s12)
+* [Figure S14](#figure-s14)
+* [Figure S15](#figure-s15)
+
+
 
 ## Figure S3
 
