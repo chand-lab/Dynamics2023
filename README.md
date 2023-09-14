@@ -31,6 +31,11 @@ Size of data files (>1 MB):
 - [Data Description](#Description-of-the-data-and-file-structure)
 - [Figure 2](#figure-2)
 - [Figure 3](#figure-3)
+- [Figure 4](#figure-4)
+- [Figure 5](#figure-5)
+- [Figure 6](#figure-6)
+- [Figure 7](#figure-7)
+- [Figure 8](#figure-8)
 
 ## Description of the data and file structure
 
@@ -51,7 +56,8 @@ Open 'plotFigure3.m'. If you want to display the first unit presented in Figure 
 
 The number corresponds to the order of presentation in the figure. You can plot all 6 units in this manner (e.g., Fig3Neurons(2) will plot the second and so on). Plotted units are shown organized by coherence and RT, as well as aligned to cue and movement onset. Scaling may be slightly different between the figures in the paper and what is plotted from MATLAB.
 
-## Figure 4: Initial conditions predict subsequent dynamics and RT
+## Figure 4
+#### Initial conditions predict subsequent dynamics and RT
 
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. This should give you a structure M with fields coherence and RT that are themselves structs with various fields including firing rates smoothed with appropriate filter and trial averaged.
 
@@ -82,7 +88,8 @@ N30.plotKinet
 
 - A sister plot to the average raw speed plot is included (bottom right). This plot shows change in firing rate (Euclidean distance between adjacent time points) averaged across trials and within RT bins.  Esentially, firing rates associated with faster RT bins move through state space faster than firing rates in slower RT bins.
 
-## Figure 5: Replicates main findings in Figure 4 using non-overlapping RT bins
+## Figure 5
+#### Replicates main findings in Figure 4 using non-overlapping RT bins
 
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
@@ -108,7 +115,8 @@ Nnon.plotKinet;
 
 
 
-## Figure 6: Single-trial analysis and decoding
+## Figure 6
+#### Single-trial analysis and decoding
 
 Open 'plotFigure6.m'. Load regressions.mat from DryadData. 
 
@@ -138,7 +146,9 @@ D.plotR2()
 D.plotAcc()
 ```
 
-## Figure 7: Initial conditions and inputs contribute to choice-related dynamics 
+## Figure 7
+#### Initial conditions and inputs contribute to choice-related dynamics 
+
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData.
 
 Running the following code will initialize the data to recreate all of the plots in Figure 7:
@@ -175,7 +185,9 @@ dataTable.trajectories3 = N30.plotTrajectories('showPooled',0,'whichCoh',7,'show
 [~, ~, ~, ~, ~, nonOverlapping] = Nnon.calcInputsAndIC;
 ```
 
-## Figure 8: Outcome changes initial conditions
+# Figure 8
+#### Outcome changes initial conditions
+
 
 Open 'plotFigure8.m'. Load Figure8Data.mat from DryadData.
 
