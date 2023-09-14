@@ -13,8 +13,12 @@
 * [Figure S13](#figure-s12)
 * [Figure S14](#figure-s14)
 * [Figure S15](#figure-s15)
-
-
+* [Figure S16](#figure-s16)
+* [Figure S17](#figure-s17)
+* [Figure S18](#figure-s18)
+* [Figure S19](#figure-s19)
+* [Figure S20](#figure-s20)
+* [Figure S21](#figure-s21)
 
 ## Figure S3
 
