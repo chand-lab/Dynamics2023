@@ -161,6 +161,17 @@ D.plotAcc()
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData.
 
 Running the following code will initialize the data to recreate all of the plots in Figure 7:
+The Figure7 folder contains the code for plotting data from Figure 7A, and B
+
+
+```
+M = plotPCs(M,'type','coherence');
+
+```
+
+This should result in two plots: One shows the individual components along with the distance and the second plots the trajectories. A few other plots (including variance explained), and slope show up as well.
+
+
 
 ```
 N30 = PMddynamics(M); 
