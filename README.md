@@ -58,6 +58,8 @@ Open 'plotFigure3.m'. If you want to display the first unit presented in Figure 
 
 The number corresponds to the order of presentation in the figure. You can plot all 6 units in this manner (e.g., Fig3Neurons(2) will plot the second and so on). Plotted units are shown organized by coherence and RT, as well as aligned to cue and movement onset. Scaling may be slightly different between the figures in the paper and what is plotted from MATLAB.
 
+[Figure List](#figure-list)
+
 ## Figure 4
 #### Initial conditions predict subsequent dynamics and RT
 
@@ -90,6 +92,9 @@ N30.plotKinet
 
 - A sister plot to the average raw speed plot is included (bottom right). This plot shows change in firing rate (Euclidean distance between adjacent time points) averaged across trials and within RT bins.  Esentially, firing rates associated with faster RT bins move through state space faster than firing rates in slower RT bins.
 
+[Figure List](#figure-list)
+
+
 ## Figure 5
 #### Replicates main findings in Figure 4 using non-overlapping RT bins
 
@@ -115,7 +120,7 @@ Nnon.plotTrajectories('showPooled',1,'showGrid',0, 'hideAxes',1);
 Nnon.plotKinet;
 ```
 
-
+[Figure List](#figure-list)
 
 ## Figure 6
 #### Single-trial analysis and decoding
@@ -147,6 +152,8 @@ D.plotR2()
 ```
 D.plotAcc()
 ```
+
+[Figure List](#figure-list)
 
 ## Figure 7
 #### Initial conditions and inputs contribute to choice-related dynamics 
@@ -187,6 +194,8 @@ dataTable.trajectories3 = N30.plotTrajectories('showPooled',0,'whichCoh',7,'show
 [~, ~, ~, ~, ~, nonOverlapping] = Nnon.calcInputsAndIC;
 ```
 
+[Figure List](#figure-list)
+
 # Figure 8
 #### Outcome changes initial conditions
 
@@ -222,7 +231,7 @@ r.plotKinet()
 r.plotDecoder()
 ```
 
-
+[Figure List](#figure-list)
 
 
 
