@@ -366,71 +366,106 @@ S12D & E
 Open 'plotFigureS13.m'. Change directory to folder containing LFADS '.mat' files inside of DryadData (... /DryadData/DryadDataSupp/LFADSdata). 
 
 Run:
-> files=dir('*.mat');
+```
+files=dir('*.mat');
+```
 
 S13A
-> singleSessionLDS(files);
+```
+singleSessionLDS(files);
+```
 
 S13B-C
-> bothEpochs(files);
+```
+bothEpochs(files);
+```
 
 
 ## Figure S14
 Open 'plotFigureS14.m'. Change directory to folder containing LFADS '.mat' files inside of DryadData (... /DryadData/DryadDataSupp/FigureS14). 
 
 Run:
-> lfadsR = load('Tsess1.mat');
-> folder=dir('*.mat');
+
+```
+lfadsR = load('Tsess1.mat');
+folder=dir('*.mat');
+```
 
 S14A
-> plotLFADSFR(lfadsR);
+```
+plotLFADSFR(lfadsR);
+```
 
 S14B
-> lfadsSingleTrialVarianceExplained(folder);
+```
+lfadsSingleTrialVarianceExplained(folder);
+```
 
 S14C
-> lfadsFR_RT_regression(folder); 
+```
+lfadsFR_RT_regression(folder); 
+```
 
 
 ## Figure S15
 Open 'plotFigureS15.m'. 
 
 Run:
-> [AllRsquare, AllRsquare_s,alignAngles,tAxis,timeValues,whichTimePoint,AllAngles] =redRank2023();
+```
+[AllRsquare, AllRsquare_s,alignAngles,tAxis,timeValues,whichTimePoint,AllAngles] =redRank2023();
+```
 
 S15B
-> plotRedRank(AllRsquare, AllRsquare_s,alignAngles,tAxis,timeValues,whichTimePoint,AllAngles)
+```
+plotRedRank(AllRsquare, AllRsquare_s,alignAngles,tAxis,timeValues,whichTimePoint,AllAngles)
+```
 
 ## Figure S16
 Open 'plotFigureS16.m'. 
 
 Load the following data for S16:
-> load regressions.mat
-> load 'decoderbyRTBins.mat'
+```
+load regressions.mat
+load 'decoderbyRTBins.mat'
+```
 
 S16A, B
+```
 plotRegScatters(regressions)
+```
 
 S16C
+```
 plotAccByBin(classifier);
+```
 
 ## Figure S17
 Open 'plotFigureS17.m'. 
 
 Load the following data for S17:
-> load('ChoicePerRTbin_hardCoh.mat');
-> load('RTandChoice_hardCoh.mat')
-> load('RTandChoice_allCoh.mat');
-> load('decoderbyRTBinsAllCoh.mat')
+
+```
+load('ChoicePerRTbin_hardCoh.mat');
+load('RTandChoice_hardCoh.mat')
+load('RTandChoice_allCoh.mat');
+load('decoderbyRTBinsAllCoh.mat')
+```
 
 S17A
-> plotDecodeByBin(allDecodes,1)
+```
+plotDecodeByBin(allDecodes,1)
+```
 
 S17B
-> plotDecodeByBin(allDecodes,7)
+```
+plotDecodeByBin(allDecodes,7)
+```
 
 S17C, D
-> ChoiceSignals(allFastHardCoh, allSlowHardCoh,justHardRTsigmap,allRTsigmap)
+
+```
+ChoiceSignals(allFastHardCoh, allSlowHardCoh,justHardRTsigmap,allRTsigmap)
+```
 
 
 
@@ -438,66 +473,108 @@ S17C, D
 Open 'plotFigure8.m'. Load Figure8data.mat from DryadData.
 
 Running the following code will initialize the data to recreate all of the plots in Figure S18:
-> [r] = POA(outcome);
+```
+[r] = POA(outcome);
+```
 
 S18A
-> [accPer] = errorRate(outcome.bx.Y_logic);
+```
+[accPer] = errorRate(outcome.bx.Y_logic);
+```
 
 S18B
-> [CCEC_RT]=findBxErrs(outcome.bx.Y_logic,outcme.bx.RT,outcome.bx.ST_logic,'CCEC');
-> plotCCEC(CCECC_RT)
+
+```
+ [CCEC_RT]=findBxErrs(outcome.bx.Y_logic,outcme.bx.RT,outcome.bx.ST_logic,'CCEC');
+ plotCCEC(CCECC_RT)
+
+```
 
 S18C
-> r.plotVariance
+
+```
+r.plotVariance
+```
+
 
 S18D
-> load regressions.mat
-> load 14October2013_T.mat
-> plotLFADS_previousResult(regressions,Trials);
+
+```
+load regressions.mat
+load 14October2013_T.mat
+plotLFADS_previousResult(regressions,Trials);
+```
 
 S18E
-> [CI, meanDist]=plotComponents(r,'moveAlign',1);
+
+```
+[CI, meanDist]=plotComponents(r,'moveAlign',1);
+```
 
 ## Figure S19
 Open 'plotFigure8.m'. Load Figure8data.mat from DryadData.
 
 Running the following code will initialize the data to recreate all of the plots in Figure S19:
-> [r] = POA(outcome,trials ='CCE_ECC');
+
+```
+[r] = POA(outcome,trials ='CCE_ECC');
+```
 
 S19A
-> r.plotComponents
+```
+r.plotComponents
+```
 
 S19a (inset)
+
+```
 r.plotVariance
+```
 
 S19B
-> r.plotTrajectories
+
+```
+r.plotTrajectories
+```
 
 S19C
-> [CCEC_RT]=findBxErrs(outcome.bx.Y_logic,outcme.bx.RT,outcome.bx.ST_logic,'CCEC');
-> plotCCEC(CCECC_RT)
+```
+[CCEC_RT]=findBxErrs(outcome.bx.Y_logic,outcme.bx.RT,outcome.bx.ST_logic,'CCEC');
+plotCCEC(CCECC_RT)
+```
 
 S19D, E, & inset
-> r.plotKinet
+```
+r.plotKinet
+```
 
 ## Figure S20
 Open 'plotFigure8.m'. Load Figure8data.mat and Figure4_5_7.mat from DryadData.
 
 Running the following code will initialize the data to recreate all of the plots in Figure S20:
-> [r] = POA(outcome);
-> [r2]=PMddynamics(M);
+
+```
+[r] = POA(outcome);
+[r2]=PMddynamics(M);
+```
 
 S20B
-> plotComponents(r,'TrajIn', r.project.TrajIn, 'TrajOut', r.project.TrajOut);
+```
+plotComponents(r,'TrajIn', r.project.TrajIn, 'TrajOut', r.project.TrajOut);
+```
 
 S20C
-> plotComponents(r2,'TrajIn', r2.project.TrajInProjRT, 'TrajOut', r2.project.TrajOutProjRT);
 
+```
+plotComponents(r2,'TrajIn', r2.project.TrajInProjRT, 'TrajOut', r2.project.TrajOutProjRT);
+```
 
 ## Figure S21
 Open 'plotFigureS3.m'.
 
 Running the following code will initialize the data to recreate all of the plots in Figure S21:
+
+```
 nNeurons = 200;
 nTrials = 300;
 
@@ -508,23 +585,31 @@ V_30 = plotPCA(FRc_30, RT_30, tNew, nNeurons);
 kernel = 0.02;
 [~, FRc_20, RT_20, tNew, nNeurons]=simulatePMdneurons('UnbiasedChoice',kernel,nNeurons,nTrials);
 V_20 = plotPCA(FRc_20, RT_20, tNew, nNeurons);
+```
 
 S21A
+```
 plotSingleTrialPCA(FRc_30, tNew, nNeurons,V_30);
-
+```
 S21B
+```
 plotSingleTrialPCA(FRc_20, tNew, nNeurons,V_20);
-
+```
 
 ## Figure S22
 Open 'plotFigure8.m'. Load Figure8data.mat from DryadData.
 
 Running the following code will initialize the data to recreate all of the plots in Figure S22:
-> [r] = POA(outcome, 'useSingleNeurons', 'true'); 
+
+```
+[r] = POA(outcome, 'useSingleNeurons', 'true'); 
+```
 
 S22A & B
-> plotBiplot(r);
 
+```
+plotBiplot(r);
+```
 
 
 
