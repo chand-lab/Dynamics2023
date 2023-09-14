@@ -2,25 +2,27 @@
 
 ## Figure List
 
-* [Figure S3](#figure-s3)
-* [Figure S4](#figure-s4)
-* [Figure S5](#figure-s5)
-* [Figure S6](#figure-s6)
-* [Figure S7](#figure-s7)
-* [Figure S8](#figure-s8)
-* [Figure S9](#figure-s9)
-* [Figure S10](#figure-s10)
-* [Figure S11](#figure-s11)
-* [Figure S12](#figure-s12)
-* [Figure S13](#figure-s12)
-* [Figure S14](#figure-s14)
-* [Figure S15](#figure-s15)
-* [Figure S16](#figure-s16)
-* [Figure S17](#figure-s17)
-* [Figure S18](#figure-s18)
-* [Figure S19](#figure-s19)
-* [Figure S20](#figure-s20)
-* [Figure S21](#figure-s21)
+* [Figure S3 - Simulations of Hypothetical Neurons](#figure-s3)
+* [Figure S4 - Heterogeneous Single Neurons](#figure-s4)
+* [Figure S5 - Percent Variance Explained](#figure-s5)
+* [Figure S6 - Trial Counts](#figure-s6)
+* [Figure S7 - Axes equalized PCA](#figure-s7)
+* [Figure S8 - KiNeT](#figure-s8)
+* [Figure S9 - RT and Coherence together](#figure-s9)
+* [Figure S10 - Single Unit PCA](#figure-s10)
+* [Figure S11 - KiNeT and PCA for different smoothing kernels](#figure-s11)
+* [Figure S12 - Tensor Component Analysis](#figure-s12)
+* [Figure S13 - Fits of a Linear Dynamical System](#figure-s13)
+* [Figure S14 - LFADS analysis of sessions](#figure-s14)
+* [Figure S15 - Reduced Rank Regression](#figure-s15)
+* [Figure S16 - Shuffled vs. Real accuracy, and Decoder by RT bin](#figure-s16)
+* [Figure S17 - Decoder by RT bin for easy and hard coherences,  and Regression analyses](#figure-s17)
+* [Figure S18 - Streaks and Post Error Slowing](#figure-s18)
+* [Figure S19 - CCE, and ECC analysis](#figure-s19)
+* [Figure S20 - Subspace projection analyses](#figure-s20)
+* [Figure S21 - Single trial and trial-averaged variance explained](#figure-s21)
+* [Figure S22 - PC1 vs PC4 loadings](#figure-s21)
+
 
 ## Figure S3
 
@@ -58,7 +60,7 @@ plotRegressionToRT(rtFR, rtRT, nTrials);
 plotChoiceDecoding(rtFR, rtRT, nTrials);
 ```
 
-[Figure List](#figure-list)
+[Back to Figure List](#figure-list)
 
 ## Figure S4
 
@@ -82,6 +84,8 @@ Fig3Neurons(1, smoothing='box50');
 ```
 
 The number corresponds to the order of presentation in the figure and you can plot all 8 units in this manner
+
+[Back to Figure List](#figure-list)
 
 ## Figure S5
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
@@ -115,6 +119,8 @@ S5C
 dataTable.var50ms = N50.plotVariance('n',10);
 ```
 
+[Back to Figure List](#figure-list)
+
 ## Figure S6
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
 
@@ -129,6 +135,8 @@ S6A & B
 ```
 dataTable.trialCounts = N30.plotTrialCounts;
 ```
+
+[Back to Figure List](#figure-list)
 
 ## Figure S7
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
@@ -145,6 +153,8 @@ S7
 N30.plotTrajectories('showPooled',1,'showGrid',1,'hideAxes',0);
 axis equal
 ```
+
+[Back to Figure List](#figure-list)
 
 ## Figure S9
 Open 'plotFigure8.m'. Load Figure8data.mat from DryadData. 
@@ -165,7 +175,7 @@ S9B
 ```
 plotTrajectories_S9(pcDataS9)
 ```
-
+[Back to Figure List](#figure-list)
 
 ## Figure S10
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
@@ -185,7 +195,7 @@ S10B-E
 ```
 dataTable.SUKinet = NSU.plotKinet;
 ```
-
+[Back to Figure List](#figure-list)
 
 ## Figure S11
 Open 'plotFigure4_5_7.m'. Load Figure4_5_7data.mat from DryadData. 
@@ -216,6 +226,10 @@ dataTable.kinet = N30.plotKinet;
 dataTable.kinet15ms = N15.plotKinet;
 dataTable.kinet50ms = N50.plotKinet;
 ```
+
+
+[Back to Figure List](#figure-list)
+
 
 ## Figure S12
 Open 'plotFigureS12.m'.  
@@ -248,7 +262,7 @@ plotTCAvar(testError_soft,trainError_soft,st_soft,st1_soft)
 plotTCAvar(testError,trainError,st,st1)
 ```
 
-
+[Back to Figure List](#figure-list)
 
 ## Figure S13
 Open 'plotFigureS13.m'. Change directory to folder containing LFADS '.mat' files inside of DryadData (... /DryadData/DryadDataSupp/LFADSdata). 
@@ -268,6 +282,7 @@ S13B-C
 bothEpochs(files);
 ```
 
+[Back to Figure List](#figure-list)
 
 ## Figure S14
 Open 'plotFigureS14.m'. Change directory to folder containing LFADS '.mat' files inside of DryadData (... /DryadData/DryadDataSupp/FigureS14). 
@@ -293,7 +308,7 @@ S14C
 ```
 lfadsFR_RT_regression(folder); 
 ```
-
+[Back to Figure List](#figure-list)
 
 ## Figure S15
 Open 'plotFigureS15.m'. 
@@ -307,6 +322,8 @@ S15B
 ```
 plotRedRank(AllRsquare, AllRsquare_s,alignAngles,tAxis,timeValues,whichTimePoint,AllAngles)
 ```
+
+[Back to Figure List](#figure-list)
 
 ## Figure S16
 Open 'plotFigureS16.m'. 
@@ -326,6 +343,8 @@ S16C
 ```
 plotAccByBin(classifier);
 ```
+
+[Back to Figure List](#figure-list)
 
 ## Figure S17
 Open 'plotFigureS17.m'. 
@@ -355,7 +374,7 @@ S17C, D
 ChoiceSignals(allFastHardCoh, allSlowHardCoh,justHardRTsigmap,allRTsigmap)
 ```
 
-
+[Back to Figure List](#figure-list)
 
 ## Figure S18
 Open 'plotFigure8.m'. Load Figure8data.mat from DryadData.
@@ -399,6 +418,8 @@ S18E
 [CI, meanDist]=plotComponents(r,'moveAlign',1);
 ```
 
+[Back to Figure List](#figure-list)
+
 ## Figure S19
 Open 'plotFigure8.m'. Load Figure8data.mat from DryadData.
 
@@ -436,6 +457,8 @@ S19D, E, & inset
 r.plotKinet
 ```
 
+[Back to Figure List](#figure-list)
+
 ## Figure S20
 Open 'plotFigure8.m'. Load Figure8data.mat and Figure4_5_7.mat from DryadData.
 
@@ -456,6 +479,8 @@ S20C
 ```
 plotComponents(r2,'TrajIn', r2.project.TrajInProjRT, 'TrajOut', r2.project.TrajOutProjRT);
 ```
+
+[Back to Figure List](#figure-list)
 
 ## Figure S21
 Open 'plotFigureS3.m'.
@@ -484,6 +509,8 @@ S21B
 plotSingleTrialPCA(FRc_20, tNew, nNeurons,V_20);
 ```
 
+[Back to Figure List](#figure-list)
+
 ## Figure S22
 Open 'plotFigure8.m'. Load Figure8data.mat from DryadData.
 
@@ -499,6 +526,7 @@ S22A & B
 plotBiplot(r);
 ```
 
+[Back to Figure List](#figure-list)
 
 
 
